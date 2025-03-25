@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.cards1{
+    background-color: black;
+}
+.cards2{
+    background-color: black;
+}
+.cards3{
+    background-color: black;
+}
+.cards4{
+    background-color: black;
+}
+.container-main{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30vh;
+}
+.container-main>div{
+    width: 15vh;
+    height: 30vh;
+    border-radius: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.container-main>div:hover{
+    background-color: red;
+    border: 4px solid blue;
+    transform: scale(1.1);
+
+}
+.a-url{
+    justify-content: center;
+    display: flex;
+}
