@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Página Responsiva con Formulario</title>
+<link rel="stylesheet" href="style.css" />
+<head>
+<body>
+
+<header>
+    <h1 class="fade-in">The Wonders of Caño Cristales</h1>
+</header>
+
+<nav>
+    <a href="#">Star</a>
+    <a href="#">Service</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+</nav>
+<div class="contenedor-grid">
+    <section class="seccion1 fade-in">
+    <h2>What is Caño Cristales?</h2>
+    <div class="imagin-container">
+        <img src="./caño cristales.jpg" alt="caño cristales" width="200" height="150">
+    </div>
+    <p>In the Eastern Plains of Colombia, you'll find a true natural gem that will amaze you: Caño Cristales, one of the most beautiful rivers in the world.
+The River of Five Colors. It's affectionately named because its crystal-clear waters offer shades of yellow, blue, green, red, and black. This natural miracle is thanks to the Macarenia clavigera, an endemic aquatic plant that, upon contact with sunlight, paints Caño Cristales in beautiful colors. </p>
+    </section>
+    <section class="seccion2 slide-in">
+    <h2>How to get to caño cristales?</h2>
+    <div class="imagin-container">
+    <img src="./parque.jpg" alt="parque la macarena" width="250" height="150">
+    </div>
+    <p>To visit this natural wonder, you must first arrive in the municipality of La Macarena, located in the department of Meta, and board a canoe that will take you along the Guayabero River to the Sierra de La Macarena National Natural Park, where Caño Cristales is located.</p>
+    </section>
+    <section class="seccion3 fade-in">
+    <h2>What to see and do in Caño Cristales?</h2>
+    <div class="imagin-container">
+    <img src="./Tapetes.jpg" alt="Tapetes rojos" width="200" height="150">
+    <p>Once in the area, you'll first pass by the Mirador, a small mountain that rises above the Guayabero River and offers an unforgettable panoramic view of the banks of Caño Cristales, where you can visit several sites. The most famous is the Tourist Pool, where you can swim in a rainbow-colored river. There's also the Red Carpet, one of the most beautiful areas thanks to the abundance of Macarenia clavigera; Los Ochos, a site with spectacular views where the rocks have created small pools of water that, seen from above, seem to repeat the shapes of the number eight; Los Cuarzos, a magnificent waterfall of cascading water that forms tranquil, crystalline pools; and Caño Cristalitos, a small river "sister" to Caño Cristales. </p>
+    </section>
+    <section class="seccion-comun"></section>
+</div>
+<div class="container">
+    <form id="formulario-contacto">
+    <h2>Envíanos un mensaje</h2>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required />
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+    <button type="submit">Enviar</button>
+    </form></div>
+
+<footer>
+    <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
