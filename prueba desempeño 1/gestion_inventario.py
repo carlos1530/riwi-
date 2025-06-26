@@ -27,7 +27,7 @@ def show_menu():
     print("8. Show sales report")
     print("9. Show top selling products")
     print("10. show sales by author")
-    print("9. Exit")
+    print("11. Exit")
 #funtion to add a new product to the inventory
 # It takes the product's title, author, category, price, and stock as arguments.
 def add_product(title, author, category, price, stock):
