@@ -1,0 +1,73 @@
+/* Reseteo de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body: Fondo suave y fuente agradable */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Título principal */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+}
+
+/* Estilo del botón */
+button {
+    background-color: #2a9d8f;
+    color: white;
+    font-size: 1em;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #21867a;
+}
+
+/* Contenedor de mensajes */
+#responseMessage {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 1.2em;
+    }
+
+    #responseMessage {
+        width: 100%;
+    }
+}
