@@ -1,0 +1,10 @@
+GUION DE SUSTENTACIÓN
+
+1. Presentar el objetivo: "Conectar una API con una base de datos relacional".
+2. Explicar la base de datos:
+   - Tablas: estudiantes, carreras, libros, prestamos.
+   - Llaves primarias y foráneas.
+3. Mostrar el script SQL.
+4. Explicar `db.js` (conexión a MySQL).
+5. Explicar `app.js` (endpoints API).
+6. Ejecutar la API y probar con Postman.
