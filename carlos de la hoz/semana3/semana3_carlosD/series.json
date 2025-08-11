@@ -1,0 +1,24 @@
+[
+  {
+    "titulo": "Stranger Things",
+    "temporadas": 4,
+    "episodios": [
+      {
+        "titulo": "Capítulo Uno",
+        "duracion_min": 50,
+        "valoraciones": [
+          {
+            "usuario_id": { "$oid": "64df66666666666666666666" },
+            "calificacion": 4,
+            "comentario": "Muy intrigante"
+          }
+        ]
+      },
+      {
+        "titulo": "Capítulo Dos",
+        "duracion_min": 52,
+        "valoraciones": []
+      }
+    ]
+  }
+]
