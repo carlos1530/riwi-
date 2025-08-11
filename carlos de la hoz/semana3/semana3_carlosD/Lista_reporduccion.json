@@ -1,0 +1,11 @@
+[
+  {
+    "usuario_id": { "$oid": "64df77777777777777777777" },
+    "nombre_lista": "Mis Favoritas",
+    "fecha_creacion": { "$date": "2025-07-15T18:30:00Z" },
+    "contenidos": [
+      { "contenido_id": { "$oid": "64df88888888888888888888" }, "tipo": "pelicula" },
+      { "contenido_id": { "$oid": "64df99999999999999999999" }, "tipo": "serie" }
+    ]
+  }
+]
