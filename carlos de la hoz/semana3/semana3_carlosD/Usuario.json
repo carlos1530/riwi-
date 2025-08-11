@@ -1,0 +1,23 @@
+[
+  {
+    "nombre": "Carlos De la Hoz",
+    "correo": "carlos@example.com",
+    "pais": "Colombia",
+    "generos_preferidos": ["Acción", "Comedia"],
+    "historial_visualizacion": [
+      { "contenido_id": { "$oid": "64df11111111111111111111" }, "fecha": { "$date": "2025-08-01T20:00:00Z" }, "minutos_vistos": 120 }
+    ]
+  },
+  {
+    "nombre": "Ana Torres",
+    "correo": "ana@example.com",
+    "pais": "México",
+    "generos_preferidos": ["Drama", "Romance"],
+    "historial_visualizacion": [
+      { "contenido_id": { "$oid": "64df22222222222222222222" }, "fecha": { "$date": "2025-07-20T18:00:00Z" }, "minutos_vistos": 90 },
+      { "contenido_id": { "$oid": "64df33333333333333333333" }, "fecha": { "$date": "2025-07-22T19:30:00Z" }, "minutos_vistos": 100 }
+    ]
+  }
+]
+
+
