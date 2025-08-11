@@ -1,0 +1,30 @@
+[
+  {
+    "titulo": "Inception",
+    "duracion_min": 148,
+    "anio_lanzamiento": 2010,
+    "generos": ["Ciencia Ficción", "Acción"],
+    "reparto": ["Leonardo DiCaprio", "Elliot Page"],
+    "valoraciones": [
+      {
+        "usuario_id": { "$oid": "64df44444444444444444444" },
+        "calificacion": 5,
+        "comentario": "Excelente película"
+      }
+    ]
+  },
+  {
+    "titulo": "Titanic",
+    "duracion_min": 195,
+    "anio_lanzamiento": 1997,
+    "generos": ["Drama", "Romance"],
+    "reparto": ["Leonardo DiCaprio", "Kate Winslet"],
+    "valoraciones": [
+      {
+        "usuario_id": { "$oid": "64df55555555555555555555" },
+        "calificacion": 4,
+        "comentario": "Muy emotiva"
+      }
+    ]
+  }
+]
