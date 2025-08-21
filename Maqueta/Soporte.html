@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movitour - Soporte</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: url('./Imagenes/playa-dia.jpg') no-repeat center center fixed;
+      background-size: cover;
+      transition: background 0.5s ease-in-out;
+    }
+    body.dark {
+      background: url('./Imagenes/playa-noche.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body class="text-white min-h-screen flex flex-col">
+
+  <!-- NAVBAR -->
+  <nav class="bg-blue-800 bg-opacity-90 p-4 flex justify-between items-center shadow-lg">
+    <div class="flex items-center gap-2">
+      <img src="./Imagenes/Modelo logo.png" alt="Logo Movitour" class="w-10 h-10 object-contain">
+      <span class="text-2xl font-bold">Movitour</span>
+    </div>
+
+    <div class="flex space-x-6">
+      <a href="index.html" class="hover:text-yellow-400 font-semibold">Home</a>
+      <a href="ofertas.html" class="hover:text-yellow-400 font-semibold">Ofertas</a>
+      <a href="soporte.html" class="hover:text-yellow-400 font-semibold">Soporte</a>
+      <a href="login.html" class="hover:text-yellow-400 font-semibold">Iniciar Sesión</a>
+    </div>
+
+    <button id="darkModeToggle" class="bg-yellow-400 hover:bg-yellow-500 text-black px-3 py-1 rounded">
+      🌙/☀️
+    </button>
+  </nav>
+
+  <!-- CONTENIDO -->
+  <main class="flex-1 p-8">
+    <h1 class="text-3xl font-bold text-center mb-8">Centro de Soporte</h1>
+
+    <section class="max-w-2xl mx-auto bg-blue-800 bg-opacity-80 p-6 rounded-lg shadow-lg">
+      <form action="#" method="POST" class="space-y-4">
+        <div>
+          <label for="nombre" class="block font-semibold">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required class="w-full p-2 rounded text-black">
+        </div>
+        <div>
+          <label for="email" class="block font-semibold">Correo Electrónico</label>
+          <input type="email" id="email" name="email" required class="w-full p-2 rounded text-black">
+        </div>
+        <div>
+          <label for="mensaje" class="block font-semibold">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required class="w-full p-2 rounded text-black"></textarea>
+        </div>
+        <button type="submit" class="bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-2 rounded">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-blue-800 bg-opacity-90 p-4 text-center">
+    <p>&copy; 2025 Movitour. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    document.getElementById("darkModeToggle").addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+    });
+  </script>
+</body>
+</html>
+
+</html>

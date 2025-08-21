@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movitour - Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: url('./Imagenes/playa-dia.jpg') no-repeat center center fixed;
+      background-size: cover;
+      transition: background 0.5s ease-in-out;
+    }
+    body.dark {
+      background: url('./Imagenes/playa-noche.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .city-card {
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+    }
+    .city-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    .city-card:hover img {
+      transform: scale(1.1);
+    }
+    .city-title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-align: center;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body class="text-white min-h-screen flex flex-col">
+
+  <nav class="bg-blue-800 bg-opacity-90 p-4 flex justify-between items-center shadow-lg">
+    <div class="flex items-center gap-2">
+      <img src="./Imagenes/Modelo logo.png" alt="Logo Movitour" class="w-10 h-10 object-contain">
+      <span class="text-2xl font-bold">Movitour</span>
+    </div>
+
+    <div class="flex space-x-6">
+      <a href="index.html" class="hover:text-yellow-400 font-semibold">Home</a>
+      <a href="ofertas.html" class="hover:text-yellow-400 font-semibold">Ofertas</a>
+      <a href="soporte.html" class="hover:text-yellow-400 font-semibold">Soporte</a>
+      <a href="login.html" class="hover:text-yellow-400 font-semibold">Iniciar Sesión</a>
+    </div>
+
+    <button id="darkModeToggle" class="bg-yellow-400 hover:bg-yellow-500 text-black px-3 py-1 rounded">
+      🌙/☀️
+    </button>
+  </nav>
+
+  <main class="flex-1 p-8">
+    <h1 class="text-3xl font-bold text-center mb-8">Explora Nuestras Ciudades</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="city-card" onclick="showInfo('Barranquilla')">
+        <img src="./Imagenes/barranquilla.jpg" alt="Barranquilla">
+        <div class="city-title">Barranquilla</div>
+      </div>
+      <div class="city-card" onclick="showInfo('Córdoba')">
+        <img src="./Imagenes/cordoba.jpg" alt="Córdoba">
+        <div class="city-title">Córdoba</div>
+      </div>
+      <div class="city-card" onclick="showInfo('Montería')">
+        <img src="./Imagenes/monteria.jpg" alt="Montería">
+        <div class="city-title">Montería</div>
+      </div>
+      <div class="city-card" onclick="showInfo('Valledupar')">
+        <img src="./Imagenes/valledupar.jpg" alt="Valledupar">
+        <div class="city-title">Valledupar</div>
+      </div>
+      <div class="city-card" onclick="showInfo('Cartagena')">
+        <img src="./Imagenes/cartagena.jpg" alt="Cartagena">
+        <div class="city-title">Cartagena</div>
+      </div>
+      <div class="city-card" onclick="showInfo('Santa Marta')">
+        <img src="./Imagenes/santamarta.jpg" alt="Santa Marta">
+        <div class="city-title">Santa Marta</div>
+      </div>
+    </div>
+
+    <section class="mt-12 text-center">
+      <h2 class="text-2xl font-bold mb-4">Nuestra Empresa</h2>
+      <p class="max-w-2xl mx-auto">
+        En <strong>Movitour</strong> nos apasiona brindarte las mejores experiencias de viaje. 
+        Descubre la riqueza cultural, histórica y natural de la región Caribe con nuestros planes exclusivos.
+      </p>
+    </section>
+  </main>
+
+  
+  <footer class="bg-blue-800 bg-opacity-90 p-4 text-center">
+    <p>&copy; 2025 Movitour. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    
+    document.getElementById("darkModeToggle").addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+    });
+    function showInfo(city) {
+      const info = {
+        "Barranquilla": "Barranquilla es conocida como la Puerta de Oro de Colombia y la casa del Carnaval.",
+        "Córdoba": "Córdoba ofrece cultura, tradición ganadera y paisajes únicos.",
+        "Montería": "Montería, la perla del Sinú, es famosa por su río y parques naturales.",
+        "Valledupar": "Valledupar es la cuna del vallenato y un lugar lleno de tradición musical.",
+        "Cartagena": "Cartagena encanta con su ciudad amurallada, playas y vida nocturna.",
+        "Santa Marta": "Santa Marta combina historia, playas y la Sierra Nevada."
+      };
+      alert(info[city] || "Información no disponible.");
+    }
+  </script>
+</body>
+</html>
